@@ -1,0 +1,17 @@
+.jp-root {
+  width: 100vw;
+  min-height: 100vh;
+  background: #f8f9fa;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+.jp-editor-pane, .jp-output-pane {
+  height: 100%;
+  width: 100%;
+  min-width: 160px;
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,50 @@
+.jp-splitpane {
+  width: 100vw;
+  height: calc(100vh - 56px);
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  background: var(--bg-secondary, #f8fafc);
+}
+
+.jp-pane {
+  height: 100%;
+  min-width: 150px;
+  overflow: auto;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+}
+.jp-left {
+  /* For visual separation */
+}
+.jp-right { 
+  /* For symmetry, but can style if needed */
+}
+
+.jp-divider {
+  width: 8px;
+  background: #f7df1e;
+  cursor: col-resize;
+  z-index: 5;
+  min-width: 8px;
+  transition: background 0.18s;
+}
+.jp-divider:hover {
+  background: #ffe570;
+}
+
+@media (max-width: 800px) {
+  .jp-splitpane {
+    flex-direction: column;
+    height: auto;
+    min-height: 80vh;
+  }
+  .jp-divider {
+    width: 100%;
+    height: 8px;
+    min-width: 0;
+    min-height: 8px;
+    cursor: row-resize;
+  }
+}

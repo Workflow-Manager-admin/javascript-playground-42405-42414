@@ -1,0 +1,19 @@
+.jp-share-btn {
+  background: #f7df1e;
+  color: #282c34;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  padding: 7px 16px;
+  font-weight: 600;
+  font-size: 1em;
+  margin-left: 20px;
+  cursor: pointer;
+  box-shadow: 0 1px 3px #f7df1e34;
+  transition: background 0.2s, box-shadow 0.2s;
+}
+.jp-share-btn:hover, .jp-share-btn:focus {
+  background: #ffed63;
+  box-shadow: 0 2px 8px #ffde007c;
+  outline: none;
+}
